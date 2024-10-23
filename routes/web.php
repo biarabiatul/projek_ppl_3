@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LandingPageController;
 
 Route::get('/materi', function () {
     return view('layouts/materi');
@@ -40,4 +41,9 @@ Route::get('/jupiter-latihan', function () {
 
 Route::get('/jupiter-game', function () {
     return view('jupiter-game');
+});
+
+Route::get('/landing', [LandingPageController::class, 'index']);
+Route::get('/', function () {
+    return view('landing');
 });
