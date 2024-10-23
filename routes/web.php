@@ -2,6 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingPageController;
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Auth\LoginController;
+
+
+
+
+
+
 
 Route::get('/materi', function () {
     return view('layouts/materi');
@@ -47,3 +55,26 @@ Route::get('/landing', [LandingPageController::class, 'index']);
 Route::get('/', function () {
     return view('landing');
 });
+
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+
+
+
+Route::get('register/siswa', [RegisterController::class, 'showRegistrationFormSiswa'])->name('register.siswa');
+Route::post('register/siswa', [RegisterController::class, 'registerSiswa']);
+
+Route::get('login/siswa', [LoginController::class, 'showLoginFormSiswa'])->name('login.siswa');
+Route::post('login/siswa', [LoginController::class, 'loginSiswa']);
+
+Route::get('login/guru', [LoginController::class, 'showLoginFormGuru'])->name('login.guru');
+Route::post('login/guru', [LoginController::class, 'loginGuru']);
+
+
+Route::get('/pendahuluan', function () {
+    return view('pendahuluan');
+});
+

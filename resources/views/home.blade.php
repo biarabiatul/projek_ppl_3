@@ -40,6 +40,7 @@
                 <img src="assets/img/game-controller.png" alt="Gambar 1">
                 <h2 class="box-title">GAME</h2>
             </div> -->
+            
         </div>
     </div>
 

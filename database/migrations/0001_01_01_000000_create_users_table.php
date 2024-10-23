@@ -14,10 +14,10 @@ return new class extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
+            $table->string('nisn')->unique()->nullable(); // NISN hanya untuk siswa
+            $table->string('kelas')->nullable(); // Hanya siswa yang punya kelas
+            $table->enum('role', ['siswa', 'guru']); // Role untuk siswa dan guru
             $table->string('password');
-            $table->rememberToken();
             $table->timestamps();
         });
 
