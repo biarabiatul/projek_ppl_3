@@ -11,7 +11,7 @@
         body {
             font-family: "Poppins", sans-serif;
             background-color: #f9f9f9;
-            margin: 0;
+            margin:0;
             padding: 0;
         }
 
@@ -50,13 +50,21 @@
         .btn-custom {
             background-color: #5a2b91;
             color: white;
-            padding: 10px 30px;
+            padding: 10px 80px;
             font-size: 18px;
             border: none;
             border-radius: 8px;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            margin-bottom: 50px;
         }
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /*margin-top: 80%; /* Atur jarak vertikal */
+            /* margin-bottom: 90px; */
+    }
 
         .btn-custom:hover {
             background-color: #b19cd9;
@@ -81,31 +89,30 @@
         .info-section {
             padding: 60px 20px;
             background-color: #fff;
-        }
-
-        .info-section h2 {
-            font-size: 32px;
-            color: #5a2b91;
-            margin-bottom: 40px;
-            text-align: center;
-        }
-
-        .info-section p {
-            font-size: 18px;
-            color: #333;
-            margin-bottom: 5px;
+            background-image: url("assets/img/bgbaru.png"); /* Tambahkan gambar latar */
+            background-size: cover; /* Pastikan gambar menutupi seluruh area */
+            background-position: center; /* Posisi gambar di tengah */
+            background-repeat: no-repeat; /* Gambar tidak diulang */
+            color: white; /* Mengubah warna teks agar kontras dengan background */
         }
 
         .info-section img {
-            width: 100%;
-            max-width: 280px;
+            display: block;
+            margin: 0 auto;
+            width: 100%; /* Pastikan gambar memiliki lebar penuh */
+            max-width: 1250px; /* Tentukan ukuran maksimum gambar */
             border-radius: 10px;
-            margin-bottom: 20px;
             transition: transform 0.3s ease;
+            margin-top: 0px;
+            margin-bottom: 100px;
         }
 
         .info-section img:hover {
             transform: scale(1.05);
+        }
+
+        .info-section h2, .info-section p {
+            text-align: center;
         }
 
         .action-buttons {
@@ -113,46 +120,15 @@
             text-align: center;
         }
 
-        .row.align-items-center {
-            gap: 20px;
-            margin-bottom: 40px;
-        }
-
-        .content {
-            max-width: 600px;
-        }
-
-        .hero-section {
-            padding: 60px 0;
-        }
-
-        .hero-section .content {
-            padding-right: 40px;
-        }
-
-        .hero-section .image-container img {
-            max-width: 400px;
-        }
-
         @media (max-width: 768px) {
-            .info-section .row {
-                text-align: center;
-            }
-
             .info-section img {
-                margin: 0 auto;
-            }
-
-            .hero-section .content {
-                padding-right: 0;
-                text-align: center;
+                max-width: 100%;
             }
 
             .hero-section .image-container img {
                 max-width: 100%;
             }
         }
-
     </style>
 </head>
 <body>
@@ -173,7 +149,7 @@
                         <a class="nav-link" href="home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#informasi-menarik">Masuk</a>
+                        <a class="nav-link" href="#">Masuk</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Login Guru</a>
@@ -192,7 +168,7 @@
             <a href="#informasi-menarik" class="btn btn-custom">Masuk</a>
         </div>
         <div class="image-container">
-             <img src='assets/img/imageq.png' alt="Gambar Jupiter">
+            <img src="assets/img/imageq.png" alt="Gambar Jupiter">
         </div>
     </div>
 
@@ -203,43 +179,20 @@
     <div id="informasi-menarik" class="info-section">
         <h2>Belajar Jadi Seru!</h2>
 
-        <!-- Materi Lengkap -->
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <img src='assets/img/buku.png' alt="Gambar Materi Lengkap">
-            </div>
-            <div class="col-md-6">
-                <p><strong>Materi Lengkap:</strong> Semua pelajaran disajikan dengan cara yang mudah dipahami.</p>
+        <!-- Gambar Menarik di tengah -->
+        <div class="row align-items-center justify-content-center" style="min-height: 400px;">
+            <div class="col-md-12 text-center">
+                <img src="assets/img/bagus.png" alt="Gambar Bagus" class="img-fluid" style="max-width: 80%; margin-top: 70px;">
             </div>
         </div>
-
-        <!-- Game Edukatif -->
-        <div class="row align-items-center">
-            <div class="col-md-6 order-md-2">
-                <img src='assets/img/game.png' alt="Gambar Game Edukatif">
-            </div>
-            <div class="col-md-6 order-md-1">
-                <p><strong>Game Edukatif:</strong> Asah kemampuan sambil main game interaktif yang bikin belajar jadi lebih seru.</p>
-            </div>
-        </div>
-
-        <!-- Evaluasi Menarik -->
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <img src='assets/img/evaluasi.png' alt="Gambar Evaluasi Menarik">
-            </div>
-            <div class="col-md-6">
-                <p><strong>Evaluasi Menarik:</strong> Uji pemahaman kamu dengan kuis dan evaluasi yang seru, nggak bikin stres!</p>
-            </div>
-        </div>
-
-        <p>Yuk, jadikan belajar lebih menyenangkan dan interaktif! Cocok untuk anak-anak SMP yang pengen belajar sambil main!</p>
+        
 
         <!-- Tombol untuk Login dan Register -->
-        <div class="action-buttons mt-4">
-            <a href="login" class="btn btn-custom mx-2">Login</a>
+        <div class="action-buttons" style="margin-top: -70px;">
+            <a href="login.html" class="btn btn-custom mx-2">Login</a>
             <a href="register.html" class="btn btn-custom mx-2">Register</a>
         </div>
+        
     </div>
 
     <!-- Bootstrap JS -->

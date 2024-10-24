@@ -35,6 +35,18 @@ Route::get('/bumi_satelit', function () {
     return view('bumi_satelit');
 });
 
+Route::get('/bumi', function () {
+    return view('bumi');
+});
+
+Route::get('/venus', function () {
+    return view('venus');
+});
+
+Route::get('/merkurius', function () {
+    return view('merkurius');
+});
+
 Route::get('/matahari', function () {
     return view('matahari');
 });
