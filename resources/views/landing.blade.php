@@ -149,10 +149,10 @@
                         <a class="nav-link" href="home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Masuk</a>
+                        <a class="nav-link" href="login/siswa">Masuk</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Login Guru</a>
+                        <a class="nav-link" href="login/guru">Login Guru</a>
                     </li>
                 </ul>
             </div>
@@ -189,8 +189,8 @@
 
         <!-- Tombol untuk Login dan Register -->
         <div class="action-buttons" style="margin-top: -70px;">
-            <a href="login.html" class="btn btn-custom mx-2">Login</a>
-            <a href="register.html" class="btn btn-custom mx-2">Register</a>
+            <a href="login/siswa" class="btn btn-custom mx-2">Login</a>
+            <a href="register/siswa" class="btn btn-custom mx-2">Register</a>
         </div>
         
     </div>

@@ -72,6 +72,16 @@ Route::get('/jupiter-game', function () {
 });
 
 
+Route::get('/uranus', function () {
+    return view('uranus');
+});
+
+Route::get('/neptunus', function () {
+    return view('neptunus');
+});
+
+
+
 Route::get('/', [LandingPageController::class, 'index']);
 Route::get('/', function () {
     return view('landing');
@@ -96,3 +106,7 @@ Route::get('/pendahuluan', function () {
     return view('pendahuluan');
 });
 
+
+Route::get('/capaian-pembelajaran', function () {
+    return view('capaian');
+});
