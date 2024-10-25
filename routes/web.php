@@ -51,6 +51,14 @@ Route::get('/matahari', function () {
     return view('matahari');
 });
 
+Route::get('/mars', function () {
+    return view('mars');
+});
+
+Route::get('/saturnus', function () {
+    return view('saturnus');
+});
+
 Route::get('/jupiter', function () {
     return view('jupiter');
 });
@@ -63,18 +71,16 @@ Route::get('/jupiter-game', function () {
     return view('jupiter-game');
 });
 
-Route::get('/landing', [LandingPageController::class, 'index']);
+
+Route::get('/', [LandingPageController::class, 'index']);
 Route::get('/', function () {
     return view('landing');
 });
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-
-
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('register/siswa', [RegisterController::class, 'showRegistrationFormSiswa'])->name('register.siswa');
 Route::post('register/siswa', [RegisterController::class, 'registerSiswa']);

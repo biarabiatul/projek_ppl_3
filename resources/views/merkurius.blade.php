@@ -18,11 +18,15 @@
     <!-- Div baru untuk isi materi -->
     <div class="materi-content" style="font-size: 18px; line-height: 1.8; padding: 20px;">
         <h2 style="font-size: 28px; margin-bottom: 20px;">Merkurius</h2>
+        
+        <!-- Menambahkan gambar Merkurius dan memastikan gambar berada di tengah -->
+        <img src="assets/img/merkurius.jpeg" alt="Gambar Merkurius" style="width: 50%; max-width: 400px; height: auto;" class="mx-auto d-block mb-4">
+
         <p style="margin-bottom: 20px;">
             Planet terdekat dengan Matahari ini bergerak cepat 
             di lintasannya. Dinamai Merkurius, seperti nama 
             dewa Romawi yang menjadi utusan para dewa yang 
-            geraknya juga cepat.  Oleh karena jaraknya sangat dekat dengan 
+            geraknya juga cepat. Oleh karena jaraknya sangat dekat dengan 
             Matahari, planet ini sulit untuk diamati dengan 
             mata telanjang. Merkurius dapat dilihat beberapa 
             saat sebelum Matahari terbit (subuh) dan setelah 
@@ -45,7 +49,7 @@
             suhu permukaannya tidak sepanas yang diduga.
         </p>
         
-        <h3 style="font-size: 24px; margin-bottom: 15px;">Karakteristik Venus</h3>
+        <h3 style="font-size: 24px; margin-bottom: 15px;">Karakteristik Merkurius</h3>
         <table class="table table-bordered" style="width: 100%; font-size: 18px;">
             <tr>
                 <th style="padding: 10px;">Massa</th>
@@ -85,11 +89,52 @@
             </tr>
         </table>
 
-        <!-- Tombol untuk scroll ke latihan dan game -->
-        <div style="margin-top: 30px;">
-            <a href="#" class="btn btn-primary">Ke Latihan</a>
-            <a href="#" class="btn btn-info">Ke Game</a>
+        <!-- Bagian Latihan atau Exercise -->
+        <div class="exercise-section" style="background-color: #e0f7fa; padding: 20px; border-radius: 10px; margin-top: 40px;">
+            <h3 style="font-size: 24px; margin-bottom: 20px;">Exercise</h3>
+            <p style="font-size: 18px; margin-bottom: 20px;">What is the most distinctive feature of Mercury?</p>
+            
+            <form action="/submit-answer" method="POST">
+                @csrf
+                <div class="form-group">
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="answer" id="option1" value="Its craters">
+                        <label class="form-check-label" for="option1" style="font-size: 18px;">
+                            Its craters
+                        </label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="answer" id="option2" value="Its temperature">
+                        <label class="form-check-label" for="option2" style="font-size: 18px;">
+                            Its temperature
+                        </label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="answer" id="option3" value="Its size">
+                        <label class="form-check-label" for="option3" style="font-size: 18px;">
+                            Its size
+                        </label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="answer" id="option4" value="Its surface">
+                        <label class="form-check-label" for="option4" style="font-size: 18px;">
+                            Its surface
+                        </label>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-lg">Submit Answer</button>
+                </div>
+            </form>
         </div>
 
+        <!-- Tombol navigasi dan scroll ke latihan serta game -->
+        <div class="d-flex justify-content-between" style="margin-top: 40px;">
+            <a href="venus" class="btn btn-secondary btn-lg">Sebelumnya</a>
+            <a href="earth" class="btn btn-secondary btn-lg">Selanjutnya</a>
+        </div>
+        
+    </div>
 </div>
 @endsection

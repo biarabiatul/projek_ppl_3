@@ -36,9 +36,23 @@
                         <span class="align-middle">Home</span>
                     </a><br>
 
-                    @can('admin')
-                    <a class="sidebar-link" href="#">
-                        <i class="bi bi-house"></i> <span class="align-middle">Data Ruangan</span></a><br>
+                    @can('guru')
+                    <a class="sidebar-link" data-bs-toggle="collapse" href="#submenu-sistem-tata-surya" role="button" aria-expanded="false" aria-controls="submenu-sistem-tata-surya">
+                        <img src="assets/img/planets.png" style="width: 20px; height: 20px;">
+                        <span class="align-middle">Manajemen Siswa</span>
+                    </a>
+                    <div class="collapse" id="submenu-sistem-tata-surya"><br>
+                        <ul class="list-unstyled fw-normal pb-1 small" style="padding-left: 20px;">
+                            <li style="margin-bottom: 10px;"><a href="/merkurius" class="sidebar-link" style="padding-left: 10px;">Daftar Siswa</a></li>
+                            <li style="margin-bottom: 10px;"><a href="/venus" class="sidebar-link" style="padding-left: 10px;">Venus</a></li>
+                            <li style="margin-bottom: 10px;"><a href="/bumi" class="sidebar-link" style="padding-left: 10px;">Bumi</a></li>
+                            <li style="margin-bottom: 10px;"><a href="/mars" class="sidebar-link" style="padding-left: 10px;">Mars</a></li>
+                            <li style="margin-bottom: 10px;"><a href="/jupiter" class="sidebar-link" style="padding-left: 10px;">Jupiter</a></li>
+                            <li style="margin-bottom: 10px;"><a href="/saturnus" class="sidebar-link" style="padding-left: 10px;">Saturnus</a></li>
+                            <li style="margin-bottom: 10px;"><a href="/uranus" class="sidebar-link" style="padding-left: 10px;">Uranus</a></li>
+                            <li><a href="/neptunus" class="sidebar-link" style="padding-left: 10px;">Neptunus</a></li>
+                        </ul>
+                    </div>
 
                     <a class="sidebar-link" href="#">
                         <i class="bi bi-box-seam"></i> <span class="align-middle">Data Alat</span></a><br>
@@ -53,7 +67,7 @@
                         <i class="bi bi-box-seam"></i> <span class="align-middle">Peminjaman Alat</span></a>
                     @endcan
 
-                    @cannot('admin')
+                    @cannot('guru')
                     <a class="sidebar-link" href="/pendahuluan">
                         <img src="assets/img/presentation.png" style="width: 20px; height: 20px;">
                         <span class="align-middle">Pendahuluan</span></a><br>
@@ -86,7 +100,11 @@
 
                     <a class="sidebar-link" href="#">
                         <img src="assets/img/task.png" style="width: 20px; height: 20px;">
-                        <span class="align-middle">Evaluasi</span></a><br><br><br><br><br><br><br>
+                        <span class="align-middle">Evaluasi</span></a><br>
+
+                    <a class="sidebar-link" href="/game">
+                        <img src="assets/img/game-controller.png" style="width: 20px; height: 20px;">
+                        <span class="align-middle">Game</span></a><br><br><br><br><br><br><br>
                     @endcan
 
                     <a class="sidebar-link-2" href="#">
