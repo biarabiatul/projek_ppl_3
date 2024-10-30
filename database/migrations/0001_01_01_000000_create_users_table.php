@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('nisn')->unique()->nullable(); // NISN hanya untuk siswa
-            $table->string('kelas')->nullable(); // Hanya siswa yang punya kelas
+            $table->string('nisn')->unique(); // NISN hanya untuk siswa
+            $table->string('kelas'); // Hanya siswa yang punya kelas
             $table->enum('role', ['siswa', 'guru']); // Role untuk siswa dan guru
             $table->string('password');
             $table->timestamps();

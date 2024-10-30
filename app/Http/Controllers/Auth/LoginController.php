@@ -23,13 +23,13 @@ class LoginController extends Controller
             'nisn' => 'required|numeric',
             'password' => 'required|string',
         ]);
-
+    
         $user = User::where('nisn', $request->nisn)->where('role', 'siswa')->first();
         if ($user && Hash::check($request->password, $user->password)) {
             Auth::login($user);
-            return redirect()->intended('/home');
+            return redirect()->intended('/home'); // Perbaiki redirect ke home
         }
-
+    
         return back()->withErrors(['loginError' => 'NISN atau password salah.']);
     }
 

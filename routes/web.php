@@ -92,6 +92,23 @@ Route::get('/', function () {
 //     return view('welcome');
 // });
 
+
+
+
+
+
+// Route::get('register/siswa', [RegisterController::class, 'showRegistrationFormSiswa'])->name('register.siswa');
+// Route::post('register/siswa', [RegisterController::class, 'registerSiswa'])->name('register.siswa');
+
+// Route::get('login/siswa', [LoginController::class, 'showLoginFormSiswa'])->name('login.siswa');
+// Route::post('login/siswa', [LoginController::class, 'loginSiswa'])->name('login.siswa');
+
+// Route untuk home setelah login
+Route::get('/home', function() {
+    return view('home'); // Pastikan view 'home.blade.php' ada
+})->name('home')->middleware('auth');
+
+
 Route::get('register/siswa', [RegisterController::class, 'showRegistrationFormSiswa'])->name('register.siswa');
 Route::post('register/siswa', [RegisterController::class, 'registerSiswa']);
 
@@ -110,3 +127,10 @@ Route::get('/pendahuluan', function () {
 Route::get('/capaian-pembelajaran', function () {
     return view('capaian');
 });
+
+
+
+
+Route::get('/home', function () {
+    return view('home');
+})->middleware('auth')->name('home');

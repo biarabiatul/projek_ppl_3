@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 
+
+
 class RegisterController extends Controller
 {
     public function showRegistrationFormSiswa()
@@ -16,17 +18,18 @@ class RegisterController extends Controller
 
     public function registerSiswa(Request $request)
     {
+            // Debug: Cek apakah data dari form diterima
+        // dd($request->all()); // Menampilkan semua input dari form
+
         $request->validate([
             'name' => 'required|string|max:255',
             'nisn' => 'required|numeric|unique:users',
-            'kelas' => 'required|string',
-            'password' => 'required|string|min:1|confirmed',
+            'password' => 'required|string|min:6|confirmed',
         ]);
 
         User::create([
             'name' => $request->name,
             'nisn' => $request->nisn,
-            'kelas' => $request->kelas,
             'role' => 'siswa',
             'password' => Hash::make($request->password),
         ]);
