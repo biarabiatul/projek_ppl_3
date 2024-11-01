@@ -15,7 +15,7 @@
 
 <div class="container">
 
-    <!-- Div baru untuk isi materi -->
+    <!-- Div untuk isi materi -->
     <div class="materi-content" style="font-size: 18px; line-height: 1.8; padding: 20px;">
         <h2 style="font-size: 28px; margin-bottom: 20px;">Jupiter</h2>
 
@@ -72,47 +72,171 @@
         <!-- Bagian Latihan atau Exercise -->
         <div class="exercise-section" style="background-color: #e0f7fa; padding: 20px; border-radius: 10px; margin-top: 40px;">
             <h3 style="font-size: 24px; margin-bottom: 20px;">Exercise</h3>
-            <p style="font-size: 18px; margin-bottom: 20px;">What is the color of Jupiter commonly referred to as?</p>
-            
-            <form action="/submit-answer" method="POST">
+
+            <form action="/submit-answers" method="POST">
                 @csrf
-                <div class="form-group">
-                    <div class="form-check mb-3">
-                        <input class="form-check-input" type="radio" name="answer" id="option1" value="Green Planet">
-                        <label class="form-check-label" for="option1" style="font-size: 18px;">
-                            Green Planet
+                
+                <!-- Soal 1 -->
+                <div class="form-group mb-4">
+                    <p style="font-size: 18px;">1. Apa yang membuat Jupiter unik di Tata Surya kita?</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="answer1" value="A">
+                        <label class="form-check-label" style="font-size: 18px;">
+                            A. Jupiter adalah planet terkecil di Tata Surya.
                         </label>
                     </div>
-                    <div class="form-check mb-3">
-                        <input class="form-check-input" type="radio" name="answer" id="option2" value="Blue Planet">
-                        <label class="form-check-label" for="option2" style="font-size: 18px;">
-                            Blue Planet
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="answer1" value="B">
+                        <label class="form-check-label" style="font-size: 18px;">
+                            B. Jupiter adalah satu-satunya planet yang memiliki lautan.
                         </label>
                     </div>
-                    <div class="form-check mb-3">
-                        <input class="form-check-input" type="radio" name="answer" id="option3" value="Gas Giant">
-                        <label class="form-check-label" for="option3" style="font-size: 18px;">
-                            Gas Giant
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="answer1" value="C">
+                        <label class="form-check-label" style="font-size: 18px;">
+                            C. Jupiter adalah planet terbesar di Tata Surya.
                         </label>
                     </div>
-                    <div class="form-check mb-3">
-                        <input class="form-check-input" type="radio" name="answer" id="option4" value="Yellow Planet">
-                        <label class="form-check-label" for="option4" style="font-size: 18px;">
-                            Yellow Planet
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="answer1" value="D">
+                        <label class="form-check-label" style="font-size: 18px;">
+                            D. Jupiter memiliki satu satelit utama.
                         </label>
                     </div>
                 </div>
 
-                <div class="text-center">
-                    <button type="submit" class="btn btn-primary btn-lg">Submit Answer</button>
+                <!-- Soal 2 -->
+                <div class="form-group mb-4">
+                    <p style="font-size: 18px;">2. Berapa kali massa Jupiter dibandingkan dengan massa Bumi?</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="answer2" value="A">
+                        <label class="form-check-label" style="font-size: 18px;">
+                            A. 10 kali
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="answer2" value="B">
+                        <label class="form-check-label" style="font-size: 18px;">
+                            B. 100 kali
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="answer2" value="C">
+                        <label class="form-check-label" style="font-size: 18px;">
+                            C. 318 kali
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="answer2" value="D">
+                        <label class="form-check-label" style="font-size: 18px;">
+                            D. 500 kali
+                        </label>
+                    </div>
                 </div>
+
+                <!-- Soal 3 -->
+                <div class="form-group mb-4">
+                    <p style="font-size: 18px;">3. Kandungan utama Jupiter terdiri dari apa saja?</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="answer3" value="A">
+                        <label class="form-check-label" style="font-size: 18px;">
+                            A. Karbon dioksida dan nitrogen
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="answer3" value="B">
+                        <label class="form-check-label" style="font-size: 18px;">
+                            B. Hidrogen dan helium
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="answer3" value="C">
+                        <label class="form-check-label" style="font-size: 18px;">
+                            C. Oksigen dan hidrogen
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="answer3" value="D">
+                        <label class="form-check-label" style="font-size: 18px;">
+                            D. Besi dan silikon
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Soal 4 -->
+                <div class="form-group mb-4">
+                    <p style="font-size: 18px;">4. Berapa diameter Jupiter dibandingkan dengan diameter Bumi?</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="answer4" value="A">
+                        <label class="form-check-label" style="font-size: 18px;">
+                            A. 2 kali diameter Bumi
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="answer4" value="B">
+                        <label class="form-check-label" style="font-size: 18px;">
+                            B. 5 kali diameter Bumi
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="answer4" value="C">
+                        <label class="form-check-label" style="font-size: 18px;">
+                            C. 11,21 kali diameter Bumi
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="answer4" value="D">
+                        <label class="form-check-label" style="font-size: 18px;">
+                            D. 20 kali diameter Bumi
+                        </label>
+                    </div>
+                </div>
+
+                                <!-- Soal 5 -->
+                                <div class="form-group mb-4">
+                    <p style="font-size: 18px;">5. Berapa lama periode revolusi Jupiter dibandingkan dengan Bumi?</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="answer5" value="A">
+                        <label class="form-check-label" style="font-size: 18px;">
+                            A. 5,2 tahun
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="answer5" value="B">
+                        <label class="form-check-label" style="font-size: 18px;">
+                            B. 9,5 tahun
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="answer5" value="C">
+                        <label class="form-check-label" style="font-size: 18px;">
+                            C. 11,9 tahun
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="answer5" value="D">
+                        <label class="form-check-label" style="font-size: 18px;">
+                            D. 15 tahun
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary" style="font-size: 18px;">Submit Jawaban</button>
+                </div>
+
             </form>
         </div>
-
         <!-- Tombol navigasi dan scroll ke latihan serta game -->
         <div class="d-flex justify-content-between" style="margin-top: 40px;">
             <a href="venus" class="btn btn-secondary btn-lg">Sebelumnya</a>
-            <a href="saturnus" class="btn btn-secondary btn-lg">Selanjutnya</a>
+            <a href="jupiter" class="btn btn-secondary btn-lg">Selanjutnya</a>
+        </div>
+
+        <!-- Button menuju ke halaman game -->
+        <div class="text-center" style="margin-top: 20px;">
+            <a href="game" class="btn btn-warning btn-lg">Mainkan Game</a>
         </div>
 
     </div>

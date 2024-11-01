@@ -75,33 +75,151 @@
         <!-- Bagian Latihan atau Exercise -->
         <div class="exercise-section" style="background-color: #e0f7fa; padding: 20px; border-radius: 10px; margin-top: 40px;">
             <h3 style="font-size: 24px; margin-bottom: 20px;">Exercise</h3>
-            <p style="font-size: 18px; margin-bottom: 20px;">What is the most distinctive feature of Saturn?</p>
             
             <form action="/submit-answer" method="POST">
                 @csrf
+                
+                <!-- Question 1 -->
+                <p style="font-size: 18px; margin-bottom: 20px;">Mengapa Saturnus dijuluki sebagai "Perhiasan Tata Surya"?</p>
                 <div class="form-group">
                     <div class="form-check mb-3">
-                        <input class="form-check-input" type="radio" name="answer" id="option1" value="Its rings">
-                        <label class="form-check-label" for="option1" style="font-size: 18px;">
-                            Its rings
+                        <input class="form-check-input" type="radio" name="answer1" id="q1option1" value="A">
+                        <label class="form-check-label" for="q1option1" style="font-size: 18px;">
+                            A. Karena memiliki satelit yang sangat banyak
                         </label>
                     </div>
                     <div class="form-check mb-3">
-                        <input class="form-check-input" type="radio" name="answer" id="option2" value="Its moons">
-                        <label class="form-check-label" for="option2" style="font-size: 18px;">
-                            Its moons
+                        <input class="form-check-input" type="radio" name="answer1" id="q1option2" value="B">
+                        <label class="form-check-label" for="q1option2" style="font-size: 18px;">
+                            B. Karena diameter Saturnus lebih besar dari planet lain
                         </label>
                     </div>
                     <div class="form-check mb-3">
-                        <input class="form-check-input" type="radio" name="answer" id="option3" value="Its size">
-                        <label class="form-check-label" for="option3" style="font-size: 18px;">
-                            Its size
+                        <input class="form-check-input" type="radio" name="answer1" id="q1option3" value="C">
+                        <label class="form-check-label" for="q1option3" style="font-size: 18px;">
+                            C. Karena memiliki cincin yang indah dan berlapis-lapis
                         </label>
                     </div>
                     <div class="form-check mb-3">
-                        <input class="form-check-input" type="radio" name="answer" id="option4" value="Its color">
-                        <label class="form-check-label" for="option4" style="font-size: 18px;">
-                            Its color
+                        <input class="form-check-input" type="radio" name="answer1" id="q1option4" value="D">
+                        <label class="form-check-label" for="q1option4" style="font-size: 18px;">
+                            D. Karena memiliki massa terbesar di Tata Surya
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <p style="font-size: 18px; margin-bottom: 20px;">Berapa jumlah cincin utama yang dimiliki oleh Saturnus?</p>
+                <div class="form-group">
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="answer2" id="q2option1" value="A">
+                        <label class="form-check-label" for="q2option1" style="font-size: 18px;">
+                            A. 3 cincin
+                        </label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="answer2" id="q2option2" value="B">
+                        <label class="form-check-label" for="q2option2" style="font-size: 18px;">
+                            B. 5 cincin
+                        </label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="answer2" id="q2option3" value="C">
+                        <label class="form-check-label" for="q2option3" style="font-size: 18px;">
+                            C. 7 cincin
+                        </label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="answer2" id="q2option4" value="D">
+                        <label class="form-check-label" for="q2option4" style="font-size: 18px;">
+                            D. 9 cincin
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <p style="font-size: 18px; margin-bottom: 20px;">Berapa kali massa Saturnus dibandingkan dengan massa Bumi?</p>
+                <div class="form-group">
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="answer3" id="q3option1" value="A">
+                        <label class="form-check-label" for="q3option1" style="font-size: 18px;">
+                            A. 50 kali massa Bumi
+                        </label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="answer3" id="q3option2" value="B">
+                        <label class="form-check-label" for="q3option2" style="font-size: 18px;">
+                            B. 95 kali massa Bumi
+                        </label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="answer3" id="q3option3" value="C">
+                        <label class="form-check-label" for="q3option3" style="font-size: 18px;">
+                            C. 80 kali massa Bumi
+                        </label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="answer3" id="q3option4" value="D">
+                        <label class="form-check-label" for="q3option4" style="font-size: 18px;">
+                            D. 70 kali massa Bumi
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <p style="font-size: 18px; margin-bottom: 20px;">Apa kandungan utama dari atmosfer Saturnus?</p>
+                <div class="form-group">
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="answer4" id="q4option1" value="A">
+                        <label class="form-check-label" for="q4option1" style="font-size: 18px;">
+                            A. Oksigen dan nitrogen
+                        </label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="answer4" id="q4option2" value="B">
+                        <label class="form-check-label" for="q4option2" style="font-size: 18px;">
+                            B. Hidrogen dan helium
+                        </label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="answer4" id="q4option3" value="C">
+                        <label class="form-check-label" for="q4option3" style="font-size: 18px;">
+                            C. Karbon dioksida dan air
+                        </label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="answer4" id="q4option4" value="D">
+                        <label class="form-check-label" for="q4option4" style="font-size: 18px;">
+                            D. Metana dan amonia
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 5 -->
+                <p style="font-size: 18px; margin-bottom: 20px;">Berapa periode rotasi Saturnus jika dibandingkan dengan satu hari di Bumi?</p>
+                <div class="form-group">
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="answer5" id="q5option1" value="A">
+                        <label class="form-check-label" for="q5option1" style="font-size: 18px;">
+                            A. 9,5 jam
+                        </label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="answer5" id="q5option2" value="B">
+                        <label class="form-check-label" for="q5option2" style="font-size: 18px;">
+                            B. 10,7 jam
+                        </label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="answer5" id="q5option3" value="C">
+                        <label class="form-check-label" for="q5option3" style="font-size: 18px;">
+                            C. 12,3 jam
+                        </label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="answer5" id="q5option4" value="D">
+                        <label class="form-check-label" for="q5option4" style="font-size: 18px;">
+                            D. 15 jam
                         </label>
                     </div>
                 </div>
@@ -116,6 +234,11 @@
         <div class="d-flex justify-content-between" style="margin-top: 40px;">
             <a href="jupiter" class="btn btn-secondary btn-lg">Sebelumnya</a>
             <a href="uranus" class="btn btn-secondary btn-lg">Selanjutnya</a>
+        </div>
+
+        <!-- Button menuju ke halaman game -->
+        <div class="text-center" style="margin-top: 20px;">
+            <a href="game" class="btn btn-warning btn-lg">Mainkan Game</a>
         </div>
         
     </div>
