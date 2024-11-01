@@ -111,10 +111,10 @@
                         <a class="nav-link" href="#">Informasi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login">Home</a>
+                        <a class="nav-link" href="login/siswa">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login">Masuk</a>
+                        <a class="nav-link" href="login/siswa">Masuk</a>
                     </li>
                 </ul>
             </div>
@@ -135,7 +135,7 @@
             <p class="subtitle">Yuk, jadikan belajar lebih menyenangkan dan interaktif! Belajar sambil bermain!</p>
         </div>
         <div>
-            <a href="login" class="btn btn-custom">Mulai</a>
+            <a href="login/siswa" class="btn btn-custom">Mulai</a>
         </div>
     </div>
 
