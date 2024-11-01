@@ -71,12 +71,118 @@
                 <td style="padding: 10px;">365,25 hari (ukuran Bumi)</td>
             </tr>
         </table>
-
-        <!-- Tombol untuk scroll ke latihan dan game -->
-        <div style="margin-top: 30px;">
-            <a href="jupiter-latihan" class="btn btn-primary">Ke Latihan</a>
-            <a href="jupiter-game" class="btn btn-info">Ke Game</a>
+        <div class="exercise-section" style="background-color: #e0f7fa; padding: 20px; border-radius: 10px; margin-top: 40px;">
+            <h3 style="font-size: 24px; margin-bottom: 20px;">Exercise</h3>
+        
+            <form action="/submit-answer" method="POST">
+                @csrf
+        
+                <!-- Soal 1 -->
+                <p style="font-size: 18px; margin-bottom: 10px;">1. Apa nama planet terdekat dengan Matahari?</p>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="question1" id="q1option1" value="Venus">
+                    <label class="form-check-label" for="q1option1" style="font-size: 18px;">A. Venus</label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="question1" id="q1option2" value="Mars">
+                    <label class="form-check-label" for="q1option2" style="font-size: 18px;">B. Mars</label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="question1" id="q1option3" value="Merkurius">
+                    <label class="form-check-label" for="q1option3" style="font-size: 18px;">C. Merkurius</label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="question1" id="q1option4" value="Jupiter">
+                    <label class="form-check-label" for="q1option4" style="font-size: 18px;">D. Jupiter</label>
+                </div>
+        
+                <!-- Soal 2 -->
+                <p style="font-size: 18px; margin-bottom: 10px;">2. Mengapa Merkurius sulit untuk diamati dengan mata telanjang?</p>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="question2" id="q2option1" value="Karena ukurannya yang besar">
+                    <label class="form-check-label" for="q2option1" style="font-size: 18px;">A. Karena ukurannya yang besar</label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="question2" id="q2option2" value="Karena letaknya yang jauh dari Bumi">
+                    <label class="form-check-label" for="q2option2" style="font-size: 18px;">B. Karena letaknya yang jauh dari Bumi</label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="question2" id="q2option3" value="Karena jaraknya yang dekat dengan Matahari">
+                    <label class="form-check-label" for="q2option3" style="font-size: 18px;">C. Karena jaraknya yang dekat dengan Matahari</label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="question2" id="q2option4" value="Karena memiliki atmosfer yang tebal">
+                    <label class="form-check-label" for="q2option4" style="font-size: 18px;">D. Karena memiliki atmosfer yang tebal</label>
+                </div>
+        
+                <!-- Soal 3 -->
+                <p style="font-size: 18px; margin-bottom: 10px;">3. Apa julukan lain yang diberikan kepada Merkurius karena kemunculannya di langit?</p>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="question3" id="q3option1" value="Bintang pagi dan bintang sore">
+                    <label class="form-check-label" for="q3option1" style="font-size: 18px;">A. Bintang pagi dan bintang sore</label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="question3" id="q3option2" value="Planet paling cerah">
+                    <label class="form-check-label" for="q3option2" style="font-size: 18px;">B. Planet paling cerah</label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="question3" id="q3option3" value="Bintang malam dan bintang fajar">
+                    <label class="form-check-label" for="q3option3" style="font-size: 18px;">C. Bintang malam dan bintang fajar</label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="question3" id="q3option4" value="Bintang terpanas">
+                    <label class="form-check-label" for="q3option4" style="font-size: 18px;">D. Bintang terpanas</label>
+                </div>
+        
+                <!-- Soal 4 -->
+                <p style="font-size: 18px; margin-bottom: 10px;">4. Mengapa Merkurius tidak menjadi planet terpanas dalam Tata Surya meskipun berada dekat dengan Matahari?</p>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="question4" id="q4option1" value="Karena ia tidak memiliki atmosfer">
+                    <label class="form-check-label" for="q4option1" style="font-size: 18px;">A. Karena ia tidak memiliki atmosfer</label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="question4" id="q4option2" value="Karena suhu permukaannya dipengaruhi oleh letaknya">
+                    <label class="form-check-label" for="q4option2" style="font-size: 18px;">B. Karena suhu permukaannya dipengaruhi oleh letaknya</label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="question4" id="q4option3" value="Karena atmosfernya yang tipis tidak mampu menahan energi Matahari">
+                    <label class="form-check-label" for="q4option3" style="font-size: 18px;">C. Karena atmosfernya yang tipis tidak mampu menahan energi Matahari</label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="question4" id="q4option4" value="Karena tidak ada kehidupan di planet tersebut">
+                    <label class="form-check-label" for="q4option4" style="font-size: 18px;">D. Karena tidak ada kehidupan di planet tersebut</label>
+                </div>
+        
+                <!-- Soal 5 -->
+                <p style="font-size: 18px; margin-bottom: 10px;">5. Apa yang dimaksud dengan atmosfer planet?</p>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="question5" id="q5option1" value="Bagian dalam planet">
+                    <label class="form-check-label" for="q5option1" style="font-size: 18px;">A. Bagian dalam planet</label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="question5" id="q5option2" value="Lapisan terluar planet">
+                    <label class="form-check-label" for="q5option2" style="font-size: 18px;">B. Lapisan terluar planet</label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="question5" id="q5option3" value="Energi yang dipancarkan oleh planet">
+                    <label class="form-check-label" for="q5option3" style="font-size: 18px;">C. Energi yang dipancarkan oleh planet</label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="question5" id="q5option4" value="Orbit planet di sekitar Matahari">
+                    <label class="form-check-label" for="q5option4" style="font-size: 18px;">D. Orbit planet di sekitar Matahari</label>
+                </div>
+        
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-lg">Submit Answer</button>
+                </div>
+            </form>
         </div>
-
+        
+        <!-- Tombol untuk scroll ke latihan dan game -->
+        <div class="d-flex justify-content-between" style="margin-top: 40px;">
+            <a href="venus" class="btn btn-secondary btn-lg">Sebelumnya</a>
+            <a href="jupiter" class="btn btn-secondary btn-lg">Selanjutnya</a>
+        </div>
+        
 </div>
 @endsection
