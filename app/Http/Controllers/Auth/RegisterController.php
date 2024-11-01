@@ -24,7 +24,7 @@ class RegisterController extends Controller
         $request->validate([
             'name' => 'required|string|max:255',
             'nisn' => 'required|numeric|unique:users',
-            'password' => 'required|string|min:6|confirmed',
+            'password' => 'required|string|min:1|confirmed',
         ]);
 
         User::create([

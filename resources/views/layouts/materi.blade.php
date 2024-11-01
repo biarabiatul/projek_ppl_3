@@ -11,7 +11,6 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="shortcut icon" href="assets/img/logo-ulm.png" />
-
     <link rel="canonical" href="https://demo-basic.adminkit.io/pages-blank.html" />
 
     <title>Materi</title>
@@ -98,18 +97,24 @@
                         <img src="assets/img/sun.png" style="width: 20px; height: 20px;">
                         <span class="align-middle">Mengenal Matahari</span></a><br>
 
-                    <a class="sidebar-link" href="#">
+                    <a class="sidebar-link" href="/evaluasi">
                         <img src="assets/img/task.png" style="width: 20px; height: 20px;">
                         <span class="align-middle">Evaluasi</span></a><br>
+                    @endcannot
 
-                    <a class="sidebar-link" href="/game">
-                        <img src="assets/img/game-controller.png" style="width: 20px; height: 20px;">
-                        <span class="align-middle">Game</span></a><br><br><br><br><br><br><br>
-                    @endcan
+                    <br><br><br><br><br><br><br>
 
+                    <!-- Menampilkan nama pengguna yang login -->
                     <a class="sidebar-link-2" href="#">
                         <img src="assets/img/resume.png" style="width: 20px; height: 20px;">
-                        <span class="align-middle">Rabiatul Adawiyah 2210131220011</span></a><br>
+                        <span class="align-middle">
+                            @auth
+                                {{ Auth::user()->name }} {{ Auth::user()->nisn }}
+                            @else
+                                Pengguna
+                            @endauth
+                        </span>
+                    </a><br>
 
                 </div>
             </div>

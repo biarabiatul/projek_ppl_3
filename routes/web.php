@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\EvaluasiController;
+
 
 
 
@@ -82,6 +84,13 @@ Route::get('/neptunus', function () {
 
 
 
+Route::get('/evaluasi', function () {
+    return view('evaluasi');
+});
+
+
+
+
 Route::get('/', [LandingPageController::class, 'index']);
 Route::get('/', function () {
     return view('landing');
@@ -134,3 +143,18 @@ Route::get('/capaian-pembelajaran', function () {
 Route::get('/home', function () {
     return view('home');
 })->middleware('auth')->name('home');
+
+
+
+
+
+
+
+
+
+
+Route::get('/evaluasi', [EvaluasiController::class, 'showEvaluasi'])->name('evaluasi');
+Route::post('/submit-evaluasi', [EvaluasiController::class, 'submitEvaluasi'])->name('submit-evaluasi');
+Route::get('/evaluasi/sukses', [EvaluasiController::class, 'evaluasiSukses'])->name('evaluasi.sukses');
+
+

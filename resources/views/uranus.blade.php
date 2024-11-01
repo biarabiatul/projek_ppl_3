@@ -18,6 +18,8 @@
     <!-- Div baru untuk isi materi -->
     <div class="materi-content" style="font-size: 18px; line-height: 1.8; padding: 20px;">
         <h2 style="font-size: 28px; margin-bottom: 20px;">Uranus</h2>
+
+        <img src="img/uranus.png" alt="Gambar Uranus" style="width: 50%; max-width: 400px; height: auto;" class="mx-auto d-block mb-4">
         <p style="margin-bottom: 20px;">
             Saat pertama kali ditemukan melalui teleskop, 
             Uranus sempat dianggap sebagai komet atau 

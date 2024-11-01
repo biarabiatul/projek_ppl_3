@@ -26,15 +26,17 @@
         <!-- Boxes section -->
         <div class="box-container">
             <div class="box">
-                <img src="assets/img/short-term.png" alt="Gambar 1">
-                <h2 class="box-title">CAPAIAN PEMBELAJARAN</h2>
+                <a href="/capaian-pembelajaran">
+                    <img src="assets/img/short-term.png" alt="Gambar 1">
+                    <h2 class="box-title">CAPAIAN PEMBELAJARAN</h2>
+                </a>
             </div>
 
             <div class="box" class="sidebar-link">
-                <img src="assets/img/completed-task.png" alt="Gambar 1">
                 <a href="/pendahuluan">
+                    <img src="assets/img/completed-task.png" alt="Gambar 1">
                     <h2 class="box-title">MATERI</h2></a>
-                
+                </a>
             </div>
             <!-- <div class="box">
                 <img src="assets/img/game-controller.png" alt="Gambar 1">
