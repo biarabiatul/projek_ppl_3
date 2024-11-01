@@ -232,16 +232,18 @@
 </div>
 
 
-        <!-- Tombol navigasi dan scroll ke latihan serta game -->
-        <div class="d-flex justify-content-between" style="margin-top: 40px;">
-            <a href="venus" class="btn btn-secondary btn-lg">Sebelumnya</a>
-            <a href="jupiter" class="btn btn-secondary btn-lg">Selanjutnya</a>
-        </div>
+       <!-- Tombol navigasi dan scroll ke latihan serta game -->
+<div class="d-flex justify-content-between" style="margin-top: 40px;">
+    <a href="venus" class="btn btn-secondary btn-lg">Sebelumnya</a>
+    <a href="jupiter" class="btn btn-secondary btn-lg">Selanjutnya</a>
+</div>
 
-        <!-- Button menuju ke halaman game -->
-        <div class="text-center" style="margin-top: 20px;">
-            <a href="game" class="btn btn-warning btn-lg">Mainkan Game</a>
-        </div>
+<!-- Bagian untuk game -->
+<div class="text-center" style="margin-top: 20px;">
+    <h3 style="margin-bottom: 20px;">Mainkan Game</h3>
+    <iframe style="max-width:100%" src="https://wordwall.net/id/embed/09005d1f7e7846db993ecc8a00fa32d9?themeId=23&templateId=10&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+</div>
+
         
     </div>
 </div>
