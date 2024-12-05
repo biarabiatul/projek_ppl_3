@@ -27,32 +27,26 @@
         <nav id="sidebar" class="sidebar js-sidebar">
             <div class="sidebar-content js-simplebar">
                 <a class="sidebar-brand" href="#">
-                    <span class="align-middle">GURU</span>
+                    <span class="align-middle">SISTEM TATA SURYA</span>
                 </a>
                 <div class="sidebar-item">
 
                     <a class="sidebar-link" href="/home">
-                        <img src="assets/img/house.png" style="width: 20px; height: 20px;">
-                        <span class="align-middle">Home</span>
+                        <img src="assets/img/students.png" style="width: 20px; height: 20px;">
+                        <span class="align-middle">Daftar Siswa</span>
                     </a><br>
 
                     <a class="sidebar-link" data-bs-toggle="collapse" href="#submenu-sistem-tata-surya" role="button" aria-expanded="false" aria-controls="submenu-sistem-tata-surya">
-                        <img src="assets/img/planets.png" style="width: 20px; height: 20px;">
-                        <span class="align-middle">Manajemen Siswa</span>
+                        <img src="assets/img/speedometer.png" style="width: 20px; height: 20px;">
+                        <span class="align-middle">Rekap Nilai</span>
                     </a><br>
                     <div class="collapse" id="submenu-sistem-tata-surya"><br>
                         <ul class="list-unstyled fw-normal pb-1 small" style="padding-left: 20px;">
-                            <li style="margin-bottom: 10px;"><a href="#" class="sidebar-link" style="padding-left: 10px;">Daftar Siswa</a></li>
-                            <li style="margin-bottom: 10px;"><a href="#" class="sidebar-link" style="padding-left: 10px;">Tambah Siswa</a></li>
-                            <li style="margin-bottom: 10px;"><a href="#" class="sidebar-link" style="padding-left: 10px;">Hapus Siswa</a></li>
-                            <li style="margin-bottom: 10px;"><a href="#" class="sidebar-link" style="padding-left: 10px;">Update Siswa</a></li>
+                            <li style="margin-bottom: 10px;"><a href="nilai_kuis" class="sidebar-link" style="padding-left: 10px;">Kuis</a></li>
+                            <li style="margin-bottom: 10px;"><a href="#" class="sidebar-link" style="padding-left: 10px;">Evaluasi</a></li>
                     
                         </ul>
-                    </div>
-
-                    <a class="sidebar-link" href="/game">
-                        <img src="assets/img/game-controller.png" style="width: 20px; height: 20px;">
-                        <span class="align-middle">Game</span></a><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
                     <a class="sidebar-link-2" href="#">
                         <img src="assets/img/resume.png" style="width: 20px; height: 20px;">

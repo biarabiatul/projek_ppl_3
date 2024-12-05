@@ -158,3 +158,7 @@ Route::post('/submit-evaluasi', [EvaluasiController::class, 'submitEvaluasi'])->
 Route::get('/evaluasi/sukses', [EvaluasiController::class, 'evaluasiSukses'])->name('evaluasi.sukses');
 
 
+# Route guru
+Route::get('/layout_guru', function () {
+    return view('layouts/layout_guru');
+});
