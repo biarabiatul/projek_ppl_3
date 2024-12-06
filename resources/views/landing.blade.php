@@ -10,12 +10,11 @@
     <style>
         body {
             font-family: "Poppins", sans-serif;
-            background-image: url(assets/img/bgbr.png);
-            background-size: cover; /* Mengatur gambar untuk menutupi seluruh area */
-            background-position: center; /* Menjaga posisi gambar di tengah */
-            background-repeat: no-repeat; /* Menghindari pengulangan gambar */
             margin: 0;
             padding: 0;
+            height: 100vh;
+            overflow: hidden; /* Menghindari scroll */
+            background-color: #ffffff; /* Background putih */
         }
 
         html {
@@ -36,32 +35,120 @@
             color: #b19cd9;
         }
 
+        /* Background Langit Gelap dengan Bintang */
+        .stars {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, #ffbf00 1px, transparent 1px); /* Bintang kuning */
+            background-size: 50px 50px; /* Ukuran bintang */
+            animation: stars 50s linear infinite;
+        }
+
+        @keyframes stars {
+            0% {
+                transform: translateY(0); /* Posisi awal */
+            }
+            100% {
+                transform: translateY(100%); /* Posisi akhir */
+            }
+        }
+
+        .falling-stars {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .falling-stars div {
+            position: absolute;
+            background-color: #ffbf00; /* Bintang jatuh  */
+            width: 5px;
+            height: 10px;
+            opacity: 0.7;
+            animation: falling 5s linear infinite;
+        }
+
+        /* Efek Bintang Jatuh yang lebih lambat */
+        @keyframes falling {
+            0% {
+                transform: translateY(-100vh);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh);
+                opacity: 0;
+            }
+        }
+
+        .falling-stars div:nth-child(1) {
+            animation-duration: 7s;
+            animation-delay: 0s;
+            left: 10%;
+        }
+
+        .falling-stars div:nth-child(2) {
+            animation-duration: 8s;
+            animation-delay: 1s;
+            left: 25%;
+        }
+
+        .falling-stars div:nth-child(3) {
+            animation-duration: 10s;
+            animation-delay: 2s;
+            left: 40%;
+        }
+
+        .falling-stars div:nth-child(4) {
+            animation-duration: 9s;
+            animation-delay: 3s;
+            left: 55%;
+        }
+
+        .falling-stars div:nth-child(5) {
+            animation-duration: 7s;
+            animation-delay: 4s;
+            left: 70%;
+        }
+
+        .falling-stars div:nth-child(6) {
+            animation-duration: 11s;
+            animation-delay: 5s;
+            left: 80%;
+        }
+
+        /* Hero Section */
         .hero-section {
             text-align: center;
-            padding: 40px 20px; /* Penambahan padding horizontal */
-            /* background-color: rgba(249, 249, 249, 0.8); Menambahkan latar belakang transparan */
-            border-radius: 8px; /* Membuat sudut lebih halus */
+            padding: 40px 20px; 
+            position: relative;
+            z-index: 2; /* Agar tetap di atas background */
         }
 
         .title {
             font-size: 42px;
             font-weight: 600;
-            color: #333;
-            margin: 20px 0 10px; /* Menyelaraskan margin judul */
+            color: #000;
+            margin: 20px 0 10px;
             margin-bottom: 2px;
             margin-top: -70px;
         }
 
         .subtitle {
             font-size: 20px;
-            color: #555;
-            margin: 5px 0; /* Menyelaraskan margin untuk subtitle */
+            color: #333;
+            margin: 5px 0;
         }
 
         .image-container img {
             width: 80%; /* Mengatur gambar menjadi 80% dari lebar halaman */
-            height: auto; /* Memastikan aspek rasio tetap terjaga */
-            margin: 10px 0; /* Menambahkan margin untuk gambar */
+            height: auto; 
+            margin: 10px 0;
         }
 
         .btn-custom {
@@ -90,13 +177,25 @@
             }
 
             .image-container img {
-                width: 100%; /* Menyesuaikan gambar untuk ukuran layar kecil */
+                width: 100%; 
                 margin-bottom: 3px;
             }
         }
     </style>
 </head>
 <body>
+
+    <!-- Background Bintang -->
+    <div class="stars"></div>
+    <div class="falling-stars">
+        <!-- Bintang jatuh -->
+        <div style="top: 5%;"></div>
+        <div style="top: 15%;"></div>
+        <div style="top: 25%;"></div>
+        <div style="top: 35%;"></div>
+        <div style="top: 45%;"></div>
+        <div style="top: 55%;"></div>
+    </div>
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-custom">
