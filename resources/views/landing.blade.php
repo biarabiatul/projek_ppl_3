@@ -125,8 +125,8 @@
     <div class="container hero-section my-5">
         <div class="content">
             <h1 class="title">SELAMAT DATANG</h1>
-            <p class="subtitle">Media Pembelajaran Interaktif Berbasis Web Sistem Tata Surya</p>
-            <p class="subtitle">Untuk SMP Kelas VII</p>
+            <p class="subtitle">Media Pembelajaran Interaktif Berbasis Web</p>
+            <p class="subtitle">Materi Tata Surya Untuk SMP Kelas VII</p>
         </div>
         <div class="image-container">
             <img src="{{ asset('assets/img/newbgt.png') }}" alt="Gambar Jupiter">
