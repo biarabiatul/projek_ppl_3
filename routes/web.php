@@ -5,6 +5,8 @@ use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\EvaluasiController;
+use App\Http\Controllers\siswaController;
+
 
 
 
@@ -162,3 +164,5 @@ Route::get('/evaluasi/sukses', [EvaluasiController::class, 'evaluasiSukses'])->n
 Route::get('/layout_guru', function () {
     return view('layouts/layout_guru');
 });
+
+Route::get('/siswa', [siswaController::class, 'index']);
