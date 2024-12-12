@@ -6,7 +6,7 @@
         <i class="hamburger align-self-center"></i>
     </a>
     <div class="collapse navbar-collapse">
-        <span class="navbar-title" style="font-size: 20px; font-weight: bold;">Mengenal Matahari</span>
+        <span class="navbar-title" style="font-size: 20px; font-weight: bold;">MATAHARI</span>
         <ul class="navbar-nav ms-auto">
             <!-- Tambahkan nav item di sini jika diperlukan -->
         </ul>
