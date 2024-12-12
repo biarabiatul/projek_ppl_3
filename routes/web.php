@@ -43,38 +43,78 @@ Route::get('/bumi', function () {
     return view('bumi');
 });
 
+# Merkurius 
+Route::get('/merkurius', function () {
+    return view('merkurius');
+});
+
+Route::get('/kuis_merkurius', function () {
+    return view('kuis_merkurius');
+});
+
+Route::get('/game_merkurius', function () {
+    return view('game_merkurius');
+});
+
+# Venus
 Route::get('/venus', function () {
     return view('venus');
 });
 
-Route::get('/merkurius', function () {
-    return view('merkurius');
+Route::get('/kuis_venus', function () {
+    return view('kuis_venus');
+});
+
+Route::get('/game_venus', function () {
+    return view('game_venus');
+});
+
+# Bumi
+Route::get('/bumi', function () {
+    return view('bumi');
+});
+
+Route::get('/kuis_bumi', function () {
+    return view('kuis_bumi');
+});
+
+Route::get('/game_bumi', function () {
+    return view('game_bumi');
+});
+
+# Mars
+Route::get('/mars', function () {
+    return view('mars');
+});
+
+Route::get('/kuis_mars', function () {
+    return view('kuis_mars');
+});
+
+Route::get('/game_mars', function () {
+    return view('game_mars');
+});
+
+# Jupiter
+Route::get('/jupiter', function () {
+    return view('jupiter');
+});
+
+Route::get('/kuis_jupiter', function () {
+    return view('kuis_jupiter');
+});
+
+Route::get('/game_jupiter', function () {
+    return view('game_jupiter');
 });
 
 Route::get('/matahari', function () {
     return view('matahari');
 });
 
-Route::get('/mars', function () {
-    return view('mars');
-});
-
 Route::get('/saturnus', function () {
     return view('saturnus');
 });
-
-Route::get('/jupiter', function () {
-    return view('jupiter');
-});
-
-Route::get('/jupiter-latihan', function () {
-    return view('jupiter-latihan');
-});
-
-Route::get('/jupiter-game', function () {
-    return view('jupiter-game');
-});
-
 
 Route::get('/uranus', function () {
     return view('uranus');
@@ -154,32 +194,8 @@ Route::get('/layout_guru', function () {
     return view('layouts/layout_guru');
 });
 
-<<<<<<< HEAD
+Route::get('/nilai_kuis', function () {
+    return view('guru/nilai_kuis');
+});
 
-
-
-
-
-
-
-Route::get('login/guru', [AuthController::class, 'showGuruLoginForm'])->name('login.guru');
-Route::post('login/guru', [AuthController::class, 'guruLogin']);
-Route::get('login/siswa', [AuthController::class, 'showSiswaLoginForm'])->name('login.siswa');
-Route::post('login/siswa', [AuthController::class, 'siswaLogin']);
-Route::get('register/siswa', [AuthController::class, 'showRegisterForm'])->name('register.siswa');
-Route::post('register/siswa', [AuthController::class, 'registerSiswa']);
-
-
-
-
-
-
-
-Route::get('/evaluasi', [EvaluasiController::class, 'index'])->name('evaluasi.index');
-Route::post('/evaluasi/jawab', [EvaluasiController::class, 'jawab'])->name('evaluasi.jawab');
-Route::get('/evaluasi/selesai', [EvaluasiController::class, 'selesai'])->name('evaluasi.selesai');
-
-
-=======
 Route::get('/siswa', [siswaController::class, 'index']);
->>>>>>> 0dfadf9974bfba5a57d2fe8197d240274dc65337

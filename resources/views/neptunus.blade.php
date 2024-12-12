@@ -77,10 +77,14 @@ km/jam</td>
             </tr>
         </table>
 
-        <!-- Tombol untuk scroll ke latihan dan game -->
-        <div style="margin-top: 30px;">
-            <a href="jupiter-latihan" class="btn btn-primary">Ke Latihan</a>
-            <a href="jupiter-game" class="btn btn-info">Ke Game</a>
+         <!-- Tombol navigasi dan scroll ke latihan serta game -->
+         <div class="d-flex justify-content-between align-items-center mt-4">
+            <a href="uranus" class="btn btn-secondary btn-lg">Sebelumnya</a>
+            <div>
+                <a href="kuis_neptunus" class="btn btn-primary btn-lg me-2">Kuis</a>
+                <a href="game_neptunus" class="btn btn-success btn-lg">Mainkan Game</a>
+            </div>
+            <a href="#" class="btn btn-secondary btn-lg">Selanjutnya</a>
         </div>
 
 </div>

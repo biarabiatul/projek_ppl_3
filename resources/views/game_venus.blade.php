@@ -18,7 +18,7 @@
     <div class="text-center" style="margin-top: 20px;">
         <h3 style="margin-bottom: 20px;">Mainkan Game</h3>
         <iframe style="max-width:100%" 
-                src="https://wordwall.net/id/embed/40899160a8fb44b980cedb10de06ef53?themeId=23&templateId=3&fontStackId=0" 
+                src="https://wordwall.net/id/embed/f70e3c5ce1be4664a9ac1f0ffe1d3970?themeId=23&templateId=10&fontStackId=0" 
                 width="500" 
                 height="380" 
                 frameborder="0" 
