@@ -4,9 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\GuruController;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\EvaluasiController;
-
-
 
 
 
@@ -21,9 +21,9 @@ Route::get('/home', function () {
     return view('home');
 });
 
-Route::get('/login', function () {
-    return view('login');
-});
+// Route::get('/login', function () {
+//     return view('login');
+// });
 
 Route::get('/pendahuluan', function () {
     return view('pendahuluan');
@@ -118,14 +118,14 @@ Route::get('/home', function() {
 })->name('home')->middleware('auth');
 
 
-Route::get('register/siswa', [RegisterController::class, 'showRegistrationFormSiswa'])->name('register.siswa');
-Route::post('register/siswa', [RegisterController::class, 'registerSiswa']);
+// Route::get('register/siswa', [RegisterController::class, 'showRegistrationFormSiswa'])->name('register.siswa');
+// Route::post('register/siswa', [RegisterController::class, 'registerSiswa']);
 
-Route::get('login/siswa', [LoginController::class, 'showLoginFormSiswa'])->name('login.siswa');
-Route::post('login/siswa', [LoginController::class, 'loginSiswa']);
+// Route::get('login/siswa', [LoginController::class, 'showLoginFormSiswa'])->name('login.siswa');
+// Route::post('login/siswa', [LoginController::class, 'loginSiswa']);
 
-Route::get('login/guru', [LoginController::class, 'showLoginFormGuru'])->name('login.guru');
-Route::post('login/guru', [LoginController::class, 'loginGuru']);
+// Route::get('login/guru', [LoginController::class, 'showLoginFormGuru'])->name('login.guru');
+// Route::post('login/guru', [LoginController::class, 'loginGuru']);
 
 
 Route::get('/pendahuluan', function () {
@@ -147,18 +147,33 @@ Route::get('/home', function () {
 
 
 
-
-
-
-
-
-
-Route::get('/evaluasi', [EvaluasiController::class, 'showEvaluasi'])->name('evaluasi');
-Route::post('/submit-evaluasi', [EvaluasiController::class, 'submitEvaluasi'])->name('submit-evaluasi');
-Route::get('/evaluasi/sukses', [EvaluasiController::class, 'evaluasiSukses'])->name('evaluasi.sukses');
-
-
 # Route guru
 Route::get('/layout_guru', function () {
     return view('layouts/layout_guru');
 });
+
+
+
+
+
+
+
+
+Route::get('login/guru', [AuthController::class, 'showGuruLoginForm'])->name('login.guru');
+Route::post('login/guru', [AuthController::class, 'guruLogin']);
+Route::get('login/siswa', [AuthController::class, 'showSiswaLoginForm'])->name('login.siswa');
+Route::post('login/siswa', [AuthController::class, 'siswaLogin']);
+Route::get('register/siswa', [AuthController::class, 'showRegisterForm'])->name('register.siswa');
+Route::post('register/siswa', [AuthController::class, 'registerSiswa']);
+
+
+
+
+
+
+
+Route::get('/evaluasi', [EvaluasiController::class, 'index'])->name('evaluasi.index');
+Route::post('/evaluasi/jawab', [EvaluasiController::class, 'jawab'])->name('evaluasi.jawab');
+Route::get('/evaluasi/selesai', [EvaluasiController::class, 'selesai'])->name('evaluasi.selesai');
+
+
