@@ -7,6 +7,8 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\GuruController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\EvaluasiController;
+use App\Http\Controllers\siswaController;
+
 
 
 
@@ -152,6 +154,7 @@ Route::get('/layout_guru', function () {
     return view('layouts/layout_guru');
 });
 
+<<<<<<< HEAD
 
 
 
@@ -177,3 +180,6 @@ Route::post('/evaluasi/jawab', [EvaluasiController::class, 'jawab'])->name('eval
 Route::get('/evaluasi/selesai', [EvaluasiController::class, 'selesai'])->name('evaluasi.selesai');
 
 
+=======
+Route::get('/siswa', [siswaController::class, 'index']);
+>>>>>>> 0dfadf9974bfba5a57d2fe8197d240274dc65337

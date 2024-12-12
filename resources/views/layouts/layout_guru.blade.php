@@ -48,9 +48,17 @@
                         </ul>
                     </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+                    <!-- Menampilkan nama pengguna yang login -->
                     <a class="sidebar-link-2" href="#">
-                        <img src="assets/img/resume.png" style="width: 20px; height: 20px;">
-                        <span class="align-middle">Rabiatul Adawiyah 2210131220011</span></a><br>
+                        <img src="assets/img/resume.png" style="width: 25px; height: 25px;">
+                        <span class="align-middle">
+                            @auth
+                                {{ Auth::user()->name }} {{ Auth::user()->nisn }}
+                            @else
+                                Pengguna
+                            @endauth
+                        </span>
+                    </a><br>
 
                 </div>
             </div>

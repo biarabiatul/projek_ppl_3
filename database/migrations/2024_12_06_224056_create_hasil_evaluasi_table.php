@@ -11,11 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('evaluasis', function (Blueprint $table) {
+        Schema::create('hasil_evaluasi', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('user_id')->nullable(); // Jika ada otentikasi pengguna
-            $table->json('jawaban'); // Untuk menyimpan jawaban dalam format JSON
+            $table->unsignedBigInteger('user_id');
+            $table->integer('nilai');
             $table->timestamps();
+    
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 
@@ -24,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('evaluasis');
+        Schema::dropIfExists('hasil_evaluasi');
     }
 };

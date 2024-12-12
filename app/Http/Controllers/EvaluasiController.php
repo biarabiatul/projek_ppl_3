@@ -2,71 +2,74 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Validator; 
-use App\Models\Evaluasi;
-
-
+use App\Models\Soal;
+use App\Models\JawabanPengguna;
+use App\Models\HasilEvaluasi;
+use Illuminate\Support\Facades\Auth;
 
 class EvaluasiController extends Controller
 {
-    public function showEvaluasi()
+    // Menampilkan halaman evaluasi dengan soal-soal
+    public function index(Request $request)
     {
-        return view('evaluasi'); // Mengembalikan tampilan evaluasi
+        // Mendapatkan nomor soal saat ini
+        $currentQuestion = $request->get('question', 1); // Default ke soal pertama
+
+        // Mendapatkan soal yang sesuai dengan nomor soal saat ini
+        $currentSoal = Soal::find($currentQuestion);
+        
+        // Mendapatkan semua soal
+        $soals = Soal::all();
+
+        // Mendapatkan jawaban pengguna yang sudah ada
+        $jawaban = JawabanPengguna::where('user_id', Auth::id())->pluck('jawaban', 'soal_id');
+        
+        return view('evaluasi.index', compact('soals', 'jawaban', 'currentSoal', 'currentQuestion'));
     }
 
-    public function submitEvaluasi(Request $request)
+    // Menyimpan jawaban pengguna
+    public function jawab(Request $request)
     {
-        // Aturan validasi
-        $validator = Validator::make($request->all(), [
-            'soal1' => 'required',
-            'soal2' => 'required',
-            'soal3' => 'required',
-            'soal4' => 'required',
-            'soal5' => 'required',
-            'soal6' => 'required',
-            'soal7' => 'required',
-            'soal8' => 'required',
-            'soal9' => 'required',
-            'soal10' => 'required',
-            'soal11' => 'required',
-            'soal12' => 'required',
-            'soal13' => 'required',
-            'soal14' => 'required',
-            'soal15' => 'required',
-            'soal16' => 'required',
-            'soal17' => 'required',
-            'soal18' => 'required',
-            'soal19' => 'required',
-            'soal20' => 'required',
+        $request->validate([
+            'jawaban' => 'required',
+            'soal_id' => 'required|exists:soals,id',
         ]);
 
-        // Jika validasi gagal, kembali ke form dengan error
-        if ($validator->fails()) {
-            return redirect()->back()->withErrors($validator)->withInput();
+        // Menyimpan atau memperbarui jawaban pengguna
+        JawabanPengguna::updateOrCreate(
+            [
+                'user_id' => Auth::id(),
+                'soal_id' => $request->soal_id,
+            ],
+            ['jawaban' => $request->jawaban]
+        );
+
+        return redirect()->route('evaluasi.index', ['question' => $request->soal_id]);
+    }
+
+    // Menyelesaikan evaluasi dan menghitung skor
+    public function selesai()
+    {
+        // Mengambil soal-soal dan jawaban pengguna
+        $soals = Soal::all();
+        $jawaban = JawabanPengguna::where('user_id', Auth::id())->get();
+
+        $score = 0;
+        foreach ($soals as $soal) {
+            $jawab = $jawaban->where('soal_id', $soal->id)->first();
+            if ($jawab && $jawab->jawaban === $soal->jawaban_benar) {
+                $score++;
+            }
         }
 
-        // Ambil jawaban dari request
-        $jawaban = $request->except('_token');
-
-        // Di sini Anda dapat menyimpan jawaban ke database atau melakukan proses lain
-        // Contoh penyimpanan jawaban (misalnya ke model Evaluasi)
-        // Evaluasi::create(['jawaban' => json_encode($jawaban)]);
-
-
-
-        Evaluasi::create([
-            'user_id' => auth()->id(), // Hanya jika Anda menggunakan otentikasi
-            'jawaban' => json_encode($jawaban),
+        // Menyimpan hasil evaluasi
+        HasilEvaluasi::create([
+            'user_id' => Auth::id(),
+            'nilai' => $score,
         ]);
 
-        // Redirect ke halaman sukses atau halaman lain setelah pengiriman berhasil
-        return redirect()->route('evaluasi.sukses')->with('success', 'Jawaban berhasil dikirim!');
-    }
-
-    public function evaluasiSukses()
-    {
-        return view('evaluasi-sukses'); // Halaman setelah pengiriman jawaban berhasil
+        // Mengembalikan halaman hasil evaluasi
+        return view('evaluasi.selesai', compact('score'));
     }
 }

@@ -9,7 +9,7 @@
             @csrf
             <div class="form-group mb-3">
                 <!-- <label for="name">Nama:</label> -->
-                <input type="text" name="name" class="form-control" placeholder="Name" required>
+                <input type="text" name="nip" class="form-control" placeholder="NIP" required>
             </div>
             <div class="form-group mb-3">
                 <!-- <label for="password">Password:</label> -->

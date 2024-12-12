@@ -14,9 +14,10 @@ return new class extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('nisn')->unique();
-            $table->enum('role', ['siswa', 'guru']);
+            $table->string('nisn')->nullable();  // Hanya untuk siswa
+            $table->string('nip')->nullable();   // Hanya untuk guru
             $table->string('password');
+            $table->enum('role', ['guru', 'siswa']);
             $table->timestamps();
         });
     }

@@ -10,6 +10,9 @@ use App\Models\User;
 
 
 
+
+
+
 class LoginController extends Controller
 {
     public function showLoginFormSiswa()
@@ -48,7 +51,7 @@ class LoginController extends Controller
         $user = User::where('name', $request->name)->where('role', 'guru')->first();
         if ($user && Hash::check($request->password, $user->password)) {
             Auth::login($user);
-            return redirect()->intended('/home');
+            return redirect()->intended('/dashboard-guru');
         }
 
         return back()->withErrors(['loginError' => 'Nama atau password salah.']);
