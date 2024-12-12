@@ -17,8 +17,12 @@
 
     <!-- Div baru untuk isi materi -->
     <div class="materi-content" style="font-size: 18px; line-height: 1.8; padding: 20px;">
-        <h2 style="font-size: 28px; margin-bottom: 20px;">Bumi dan Satelitnya</h2>
-
+        <div class="sketchfab-embed-wrapper" style="text-align: center;">
+            <iframe title="Solar Eclipse" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/f0512017c37f4830b7eb068b7f1b1a11/embed" style="width: 100%; height: 500px;"> </iframe>
+            <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+                <a href="https://sketchfab.com/3d-models/cartoon-lowpoly-earth-planet-2-uvw-textured-73dd3283bf6d45a3a62d4806f3044633?utm_medium=embed&utm_campaign=share-popup&utm_content=73dd3283bf6d45a3a62d4806f3044633" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"></a><i>Bumi, Matahari, dan Bulan</i>
+            </p>
+        </div>
         <p style="margin-bottom: 20px;">
             Pada bagian ini kalian akan lebih jauh mengenal bagaimana Bumi bergerak dan dampaknya pada kehidupan manusia sehari-hari, juga mengenal satelit yang dimiliki Bumi. Tahukah kalian, ternyata satelit milik Bumi tidak hanya Bulan, lho! Mari cari tahu dengan mempelajari bagian ini.
         </p>
@@ -29,78 +33,43 @@
             Waktu yang digunakan planet untuk mengitari Matahari disebut periode tahun, sedangkan waktu yang digunakan planet untuk berputar pada sumbunya disebut periode hari. Berdasarkan jarak antara planet dengan Matahari menyebabkan panjang 1 tahun tiap planet berbeda-beda.
         </p>
 
-        <!-- Siang dan Malam -->
-        <h4 style="font-size: 20px; margin-bottom: 10px;">a. Siang dan Malam</h4>
-        <p style="margin-bottom: 20px;">
-            Ketika Bumi berputar mengitari porosnya, pergantian siang dan malam terjadi. Bagian Bumi yang menerima sinar Matahari akan mengalami siang, sebaliknya bagian lainnya mengalami malam.
-        </p>
-
-        <!-- Pergantian Tahun -->
-        <h4 style="font-size: 20px; margin-bottom: 10px;">b. Pergantian Tahun</h4>
-        <p style="margin-bottom: 20px;">
-            Bumi mengelilingi Matahari selama 1 tahun. Untuk memudahkan penghitungan, setiap 4 tahun sekali ditambahkan 1 hari pada kalender tahunan kita, yang disebut tahun kabisat.
-        </p>
-
-        <!-- Pergantian Musim -->
-        <h4 style="font-size: 20px; margin-bottom: 10px;">c. Pergantian Musim</h4>
-        <p style="margin-bottom: 20px;">
-            Gerak Bumi mengelilingi Matahari menyebabkan pergantian musim. Musim yang dialami suatu daerah bergantung pada posisinya di Bumi.
-        </p>
-
+        <ol type="a">
+            <li><h4 style="font-size: 20px; margin-bottom: 10px;">Siang dan Malam</h4>
+                <p>Ketika Bumi berputar mengitari porosnya, pergantian siang dan malam terjadi. Bagian Bumi yang menerima sinar Matahari akan mengalami siang, sebaliknya bagian lainnya mengalami malam.</p>
+            </li>
+            <li><h4 style="font-size: 20px; margin-bottom: 10px;">Pergantian Tahun</h4>
+                <p>Bumi mengelilingi Matahari selama 1 tahun. Untuk memudahkan penghitungan, setiap 4 tahun sekali ditambahkan 1 hari pada kalender tahunan kita, yang disebut tahun kabisat.</p>
+            </li>
+            <li><h4 style="font-size: 20px; margin-bottom: 10px;">Pergantian Musim</h4>
+                <p>Gerak Bumi mengelilingi Matahari menyebabkan pergantian musim. Musim yang dialami suatu daerah bergantung pada posisinya di Bumi.</p>
+            </li></ol>
         <!-- Bulan Sebagai Satelit Bumi -->
         <h3 style="font-size: 24px; margin-bottom: 15px;">2. Bulan Sebagai Satelit Bumi</h3>
+        <ol type="a">
+            <li><h4 style="font-size: 20px; margin-bottom: 10px;">Karakteristik Bulan</h4>
+                <p>Bulan memengaruhi gaya gravitasi Bumi, membantu menjaga kestabilannya. Jarak yang tepat antara Bulan dan Bumi menyebabkan Bulan berperan dalam menjaga kestabilan Bumi.</p>
+            </li>
+            <li><h4 style="font-size: 20px; margin-bottom: 10px;">Fase Bulan</h4>
+                <p>Dari Bumi, bentuk Bulan terlihat berubah bergantung pada posisinya mengelilingi Bumi, yang disebut sebagai Fase Bulan.</p>
+            </li>
+            <li><h4 style="font-size: 20px; margin-bottom: 10px;">Gerhana Bulan</h4>
+                <p>Gerhana Bulan terjadi ketika Bulan masuk ke dalam bayangan Bumi, yang membuatnya lenyap sebagian atau seluruhnya. Ada dua jenis gerhana Bulan: total dan sebagian.</p>
+            </li>
+        </ol>
         
-        <!-- Karakteristik Bulan -->
-        <h4 style="font-size: 20px; margin-bottom: 10px;">a. Karakteristik Bulan</h4>
-        <p style="margin-bottom: 20px;">
-            Bulan memengaruhi gaya gravitasi Bumi, membantu menjaga kestabilannya. Jarak yang tepat antara Bulan dan Bumi menyebabkan Bulan berperan dalam menjaga kestabilan Bumi.
-        </p>
 
-        <!-- Fase Bulan -->
-        <h4 style="font-size: 20px; margin-bottom: 10px;">b. Fase Bulan</h4>
-        <p style="margin-bottom: 20px;">
-            Dari Bumi, bentuk Bulan terlihat berubah bergantung pada posisinya mengelilingi Bumi, yang disebut sebagai Fase Bulan.
-        </p>
-
-        <!-- Gerhana Bulan -->
-        <h4 style="font-size: 20px; margin-bottom: 10px;">c. Gerhana Bulan</h4>
-        <p style="margin-bottom: 20px;">
-            Gerhana Bulan terjadi ketika Bulan masuk ke dalam bayangan Bumi, yang membuatnya lenyap sebagian atau seluruhnya. Ada dua jenis gerhana Bulan: total dan sebagian.
-        </p>
-
-        <!-- Bagian Latihan atau Exercise -->
-        <div class="exercise-section" style="background-color: #e0f7fa; padding: 20px; border-radius: 10px; margin-top: 40px;">
-            <h3 style="font-size: 24px; margin-bottom: 20px;">Exercise</h3>
-            <p style="font-size: 18px; margin-bottom: 20px;">Apakah nama satelit utama Bumi?</p>
-            
+        <div class="exercise-section" style="background-color: #ffff; padding: 20px; border-radius: 10px; margin-top: 40px;">        
             <form action="/submit-answer" method="POST">
                 @csrf
-                <div class="form-group">
-                    <div class="form-check mb-3">
-                        <input class="form-check-input" type="radio" name="answer" id="option1" value="Bulan">
-                        <label class="form-check-label" for="option1" style="font-size: 18px;">
-                            Bulan
-                        </label>
-                    </div>
-                    <div class="form-check mb-3">
-                        <input class="form-check-input" type="radio" name="answer" id="option2" value="Mars">
-                        <label class="form-check-label" for="option2" style="font-size: 18px;">
-                            Mars
-                        </label>
-                    </div>
-                </div>
-
-                <div class="text-center">
-                    <button type="submit" class="btn btn-primary btn-lg">Submit Answer</button>
-                </div>
-            </form>
+        
+         <!-- Bagian Latihan atau Exercise -->
+         <div class="d-flex justify-content-between align-items-center mt-4">
+            <a href="#" class="btn btn-secondary btn-lg">Sebelumnya</a>
+            <div>
+                <a href="#" class="btn btn-primary btn-lg me-2">Kuis</a>
+                <a href="#" class="btn btn-success btn-lg">Mainkan Game</a>
+            </div>
+            <a href="matahari" class="btn btn-secondary btn-lg">Selanjutnya</a>
         </div>
-
-        <!-- Button menuju ke halaman game -->
-        <div class="text-center" style="margin-top: 20px;">
-            <a href="game" class="btn btn-warning btn-lg">Mainkan Game</a>
-        </div>
-
-    </div>
 </div>
 @endsection

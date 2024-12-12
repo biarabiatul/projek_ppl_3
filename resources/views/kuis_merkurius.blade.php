@@ -124,7 +124,7 @@
         <!-- Kolom Quiz Navigation -->
         <div class="col-lg-4 col-md-12">
             <div class="quiz-navigation border p-3 rounded">
-                <h5 class="text-center mb-3">Quiz Navigation</h5>
+                <h5 class="text-center mb-3">Navigasi Kuis</h5>
                 <div class="d-flex flex-wrap justify-content-center">
                     <button id="nav1" class="btn btn-outline-secondary m-1">1</button>
                     <button id="nav2" class="btn btn-outline-secondary m-1">2</button>
@@ -133,7 +133,7 @@
                     <button id="nav5" class="btn btn-outline-secondary m-1">5</button>
                 </div>
                 <div class="text-center mt-3">
-                    <a href="#" class="btn btn-link">Show one page at a time</a><br>
+                    <a href="#" class="btn btn-link">Tampilkan Semua Halaman</a><br>
                     <a href="#" class="btn btn-link">Finish review</a>
                 </div>
             </div>
@@ -142,7 +142,7 @@
 </div>
 
 <div class="quiz-question border p-3 rounded mb-4" style="font-size: 20px; line-height: 1.6;">
-    <button id="submitQuiz" class="btn btn-primary">Submit</button>
+    <button id="submitQuiz" class="btn btn-primary">Kirim</button>
 </div>
 
 <script>
@@ -195,14 +195,14 @@
 
     // Periksa apakah semua pertanyaan telah dijawab
     if (!allAnswered) {
-        alert('Harap jawab semua pertanyaan sebelum submit.');
+        alert('Harap menjawab semua pertanyaan sebelum mengirim.');
     } else {
         // Tampilkan dialog konfirmasi
-        const userConfirmed = confirm('Apakah Anda yakin ingin submit jawaban Anda?');
+        const userConfirmed = confirm('Apakah Anda yakin ingin mengirim jawaban?');
 
         if (userConfirmed) {
             // Tampilkan hasil skor
-            alert(`Jawaban Anda telah terkumpul. Skor Anda: ${score} dari 5`);
+            alert(`Jawaban Anda telah terkirim. Skor Anda: ${score} dari 5`);
             console.log('Jawaban:', answers);
 
             // Redirect ke halaman materi

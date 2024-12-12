@@ -17,9 +17,13 @@
 
     <!-- Div baru untuk isi materi -->
     <div class="materi-content" style="font-size: 18px; line-height: 1.8; padding: 20px;">
-        <h2 style="font-size: 28px; margin-bottom: 20px;">Merkurius</h2>
          <!-- Menambahkan gambar Mars dan memastikan gambar berada di tengah -->
-         <img src="assets/img/merkurius.jpeg" alt="Gambar merkurius" style="width: 50%; max-width: 400px; height: auto;" class="mx-auto d-block mb-4">
+         <div class="sketchfab-embed-wrapper" style="text-align: center;">
+            <iframe title="Solar Eclipse" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/32347fa4ec1a4987b71f461a401d91c4/embed" style="width: 100%; height: 500px;"> </iframe>
+            <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+                <a href="https://sketchfab.com/3d-models/cartoon-lowpoly-earth-planet-2-uvw-textured-73dd3283bf6d45a3a62d4806f3044633?utm_medium=embed&utm_campaign=share-popup&utm_content=73dd3283bf6d45a3a62d4806f3044633" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"></a><i>Planet Merkurius</i>
+            </p>
+        </div>
         <p style="margin-bottom: 20px;">
             Planet terdekat dengan Matahari ini bergerak cepat 
             di lintasannya. Dinamai Merkurius, seperti nama 
