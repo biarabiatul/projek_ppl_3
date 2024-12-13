@@ -17,7 +17,6 @@
 
     <!-- Div baru untuk isi materi -->
     <div class="materi-content" style="font-size: 18px; line-height: 1.8; padding: 20px;">
-        <h2 style="font-size: 28px; margin-bottom: 20px;">Uranus</h2>
 
         <img src="img/uranus.png" alt="Gambar Uranus" style="width: 50%; max-width: 400px; height: auto;" class="mx-auto d-block mb-4">
         <p style="margin-bottom: 20px;">
@@ -74,12 +73,12 @@
 
          <!-- Tombol navigasi dan scroll ke latihan serta game -->
          <div class="d-flex justify-content-between align-items-center mt-4">
-            <a href="saturnus" class="btn btn-secondary btn-lg">Sebelumnya</a>
+            <a href="saturnus" class="btn btn-secondary btn-lg" style="background-color: #5a2b91; color: white;">Sebelumnya</a>
             <div>
                 <a href="kuis_uranus" class="btn btn-primary btn-lg me-2">Kuis</a>
                 <a href="game_uranus" class="btn btn-success btn-lg">Mainkan Game</a>
             </div>
-            <a href="neptunus" class="btn btn-secondary btn-lg">Selanjutnya</a>
+            <a href="neptunus" class="btn btn-secondary btn-lg" style="background-color: #5a2b91; color: white;">Selanjutnya</a>
         </div>
 
 </div>

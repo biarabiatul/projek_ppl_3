@@ -22,17 +22,21 @@
         }
 
         .navbar-custom {
-            background-color: #5a2b91;
+            background: linear-gradient(to right, #5a2b91, #b19cd9);
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .navbar-custom .navbar-brand, 
         .navbar-custom .nav-link {
             color: white;
+            transition: color 0.3s ease, background-color 0.3s ease;
         }
 
         .navbar-custom .nav-link:hover {
-            color: #b19cd9;
+            color: #5a2b91;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            padding: 5px 10px;
         }
 
         /* Background Langit Gelap dengan Bintang */
@@ -164,7 +168,7 @@
         }
 
         .btn-custom:hover {
-            background-color: #b19cd9;
+            background-color: #5a2b91;
         }
 
         @media (max-width: 768px) {
@@ -207,7 +211,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Informasi</a>
+                        <a class="nav-link" href="pengembang">Informasi</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="login/siswa">Home</a>
@@ -239,6 +243,4 @@
     </div>
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap

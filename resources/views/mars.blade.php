@@ -17,7 +17,6 @@
 
     <!-- Div baru untuk isi materi -->
     <div class="materi-content" style="font-size: 18px; line-height: 1.8; padding: 20px;">
-        <h2 style="font-size: 28px; margin-bottom: 20px;">Mars</h2>
         
         <!-- Menambahkan gambar Mars dan memastikan gambar berada di tengah -->
         <img src="assets/img/mars.jpeg" alt="Gambar Mars" style="width: 50%; max-width: 400px; height: auto;" class="mx-auto d-block mb-4">
@@ -76,12 +75,12 @@
 
         <!-- Tombol navigasi dan scroll ke latihan serta game -->
        <div class="d-flex justify-content-between align-items-center mt-4">
-            <a href="bumi" class="btn btn-secondary btn-lg">Sebelumnya</a>
+            <a href="bumi" class="btn btn-secondary btn-lg" style="background-color: #5a2b91; color: white;">Sebelumnya</a>
             <div>
                 <a href="kuis_mars" class="btn btn-primary btn-lg me-2">Kuis</a>
                 <a href="game_mars" class="btn btn-success btn-lg">Mainkan Game</a>
             </div>
-            <a href="jupiter" class="btn btn-secondary btn-lg">Selanjutnya</a>
+            <a href="jupiter" class="btn btn-secondary btn-lg" style="background-color: #5a2b91; color: white;">Selanjutnya</a>
         
     </div>
 </div>

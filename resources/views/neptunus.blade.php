@@ -79,12 +79,12 @@ km/jam</td>
 
          <!-- Tombol navigasi dan scroll ke latihan serta game -->
          <div class="d-flex justify-content-between align-items-center mt-4">
-            <a href="uranus" class="btn btn-secondary btn-lg">Sebelumnya</a>
+            <a href="uranus" class="btn btn-secondary btn-lg" style="background-color: #5a2b91; color: white;">Sebelumnya</a>
             <div>
                 <a href="kuis_neptunus" class="btn btn-primary btn-lg me-2">Kuis</a>
                 <a href="game_neptunus" class="btn btn-success btn-lg">Mainkan Game</a>
             </div>
-            <a href="#" class="btn btn-secondary btn-lg">Selanjutnya</a>
+            <a href="bumi_satelit" class="btn btn-secondary btn-lg" style="background-color: #5a2b91; color: white;">Bumi & Satelit</a>
         </div>
 
 </div>

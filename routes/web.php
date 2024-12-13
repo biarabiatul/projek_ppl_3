@@ -199,3 +199,7 @@ Route::get('/nilai_kuis', function () {
 });
 
 Route::get('/siswa', [siswaController::class, 'index']);
+
+Route::get('/pengembang', function () {
+    return view('pengembang'); // Pastikan file ini disimpan sebagai resources/views/pengembang.blade.php
+});

@@ -41,5 +41,12 @@
         Dengan memahami tata surya, diharapkan kita dapat mengembangkan rasa ingin tahu yang lebih besar tentang alam semesta dan bagaimana kita, sebagai manusia, berinteraksi dengan lingkungan di sekitar kita. Mari kita mulai perjalanan pengetahuan ini dengan memahami apa yang dimaksud dengan tata surya dan komponen-komponen yang menyusunnya.
         </p>
     </div>
+    <div class="d-flex justify-content-between align-items-center mt-4">
+        
+        <div>
+            
+        </div>
+        <a href="bumi" class="btn btn-secondary btn-lg" style="background-color: #5a2b91; color: white;">Selanjutnya</a>
+    </div>
 </div>
 @endsection

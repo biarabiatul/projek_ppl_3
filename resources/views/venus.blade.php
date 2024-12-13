@@ -14,12 +14,18 @@
 </nav>
 
 <div class="container">
+         <!-- Menambahkan embed model 3D dari Sketchfab -->
+         <div class="sketchfab-embed-wrapper" style="text-align: center;">
+            <iframe title="Solar Eclipse" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/b306aaadbf2b4fcea1afa2db5ed75b4f/embed" style="width: 100%; height: 500px;"> </iframe>
+            <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+                 <i>Planet Venus</i>
+            </p>
+        </div>
 
     <!-- Div baru untuk isi materi -->
     <div class="materi-content" style="font-size: 18px; line-height: 1.8; padding: 20px;">
-        <h2 style="font-size: 28px; margin-bottom: 20px;">Venus</h2>
+
          <!-- Menambahkan gambar Mars dan memastikan gambar berada di tengah -->
-         <img src="assets/img/venus.jpg" alt="Gambar venus" style="width: 50%; max-width: 400px; height: auto;" class="mx-auto d-block mb-4">
         <p style="margin-bottom: 20px;">
             Planet yang terletak di urutan kedua terdekat dari 
             Matahari ini merupakan planet terpanas di Tata Surya. 
@@ -88,12 +94,12 @@
         </table>
          <!-- Tombol navigasi dan scroll ke latihan serta game -->
          <div class="d-flex justify-content-between align-items-center mt-4">
-            <a href="merkurius" class="btn btn-secondary btn-lg">Sebelumnya</a>
+            <a href="merkurius" class="btn btn-secondary btn-lg" style="background-color: #5a2b91; color: white;">>Sebelumnya</a>
             <div>
                 <a href="kuis_venus" class="btn btn-primary btn-lg me-2">Kuis</a>
                 <a href="game_venus" class="btn btn-success btn-lg">Mainkan Game</a>
             </div>
-            <a href="bumi" class="btn btn-secondary btn-lg">Selanjutnya</a>
+            <a href="bumi" class="btn btn-secondary btn-lg" style="background-color: #5a2b91; color: white;">Selanjutnya</a>
 
 </div>
 @endsection

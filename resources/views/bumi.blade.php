@@ -84,12 +84,12 @@
         
          <!-- Bagian Latihan atau Exercise -->
          <div class="d-flex justify-content-between align-items-center mt-4">
-            <a href="#" class="btn btn-secondary btn-lg">Sebelumnya</a>
+            <a href="venus" class="btn btn-secondary btn-lg" style="background-color: #5a2b91; color: white;">Sebelumnya</a>
             <div>
                 <a href="#" class="btn btn-primary btn-lg me-2">Kuis</a>
                 <a href="#" class="btn btn-success btn-lg">Mainkan Game</a>
             </div>
-            <a href="mars" class="btn btn-secondary btn-lg">Selanjutnya</a>
+            <a href="mars" class="btn btn-secondary btn-lg" style="background-color: #5a2b91; color: white;">Selanjutnya</a>
         </div>
 
 </div>

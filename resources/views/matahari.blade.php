@@ -96,15 +96,14 @@
         <div class="exercise-section" style="background-color: #ffff; padding: 20px; border-radius: 10px; margin-top: 40px;">        
             <form action="/submit-answer" method="POST">
                 @csrf
-        
          <!-- Bagian Latihan atau Exercise -->
          <div class="d-flex justify-content-between align-items-center mt-4">
-            <a href="#" class="btn btn-secondary btn-lg">Sebelumnya</a>
+            <a href="bumi_satelit" class="btn btn-secondary btn-lg" style="background-color: #5a2b91; color: white;">Sebelumnya</a>
             <div>
                 <a href="#" class="btn btn-primary btn-lg me-2">Kuis</a>
                 <a href="#" class="btn btn-success btn-lg">Mainkan Game</a>
             </div>
-            <a href="venus" class="btn btn-secondary btn-lg">Selanjutnya</a>
+            <a href="evaluasi" class="btn btn-secondary btn-lg" style="background-color: #5a2b91; color: white;">Selanjutnya</a>
         </div>
 </div>
 @endsection
